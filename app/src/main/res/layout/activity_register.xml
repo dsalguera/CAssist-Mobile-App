@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Interfaces.Register">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageUser"
+                android:src="@drawable/noimagen"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center"
+                android:background="#E6E6E6"/>
+
+            <Button
+                android:id="@+id/btnElegirUs"
+                android:layout_width="250dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_pictures_folder_24"
+                android:paddingHorizontal="60dp"
+                android:textAllCaps="false"
+                android:background="@drawable/btn"
+                android:textColor="@color/blanco"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:text="Elegir imagen" />
+
+            <EditText
+                android:id="@+id/txtnombreuser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_user_credentials"
+                android:drawablePadding="5dp"
+                android:background="@drawable/edittext_rounded"
+                android:padding="15dp"
+                android:textSize="15dp"
+                android:ems="10"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Nombre de Usuario"/>
+
+            <EditText
+                android:id="@+id/txtpassU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="5dp"
+                android:background="@drawable/edittext_rounded"
+                android:padding="15dp"
+                android:textSize="15dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Contraseña"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="25dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+                <EditText
+                    android:id="@+id/txtprimerNombre"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="50.0dip"
+                    android:layout_weight="0.20"
+                    android:drawableLeft="@drawable/ic_instapaper"
+                    android:drawablePadding="5dp"
+                    android:layout_marginTop="10dp"
+
+                    android:background="@drawable/edittext_rounded"
+
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textSize="17dp"
+                    android:hint="Primer Nombre"/>
+
+                <EditText
+                    android:id="@+id/txtsegundoNombre"
+                    android:drawableLeft="@drawable/ic_instapaper"
+                    android:drawablePadding="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="50.0dip"
+                    android:layout_weight="0.20"
+                    android:background="@drawable/edittext_rounded"
+                    android:layout_marginTop="10dp"
+
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textSize="17dp"
+                    android:hint="Segundo Nombre"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="25dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+                <EditText
+                    android:id="@+id/txtprimerApellido"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="0dp"
+                    android:layout_height="50.0dip"
+                    android:layout_weight="0.20"
+                    android:background="@drawable/edittext_rounded"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_instapaper"
+                    android:drawablePadding="5dp"
+                    android:inputType="textPersonName"
+
+                    android:padding="15dp"
+                    android:textSize="17dp"
+                    android:hint="Primer Apellido"/>
+
+                <EditText
+                    android:id="@+id/txtsegundoApellido"
+
+                    android:layout_width="0dp"
+                    android:layout_height="50.0dip"
+                    android:layout_weight="0.20"
+                    android:drawableLeft="@drawable/ic_instapaper"
+                    android:drawablePadding="5dp"
+                    android:background="@drawable/edittext_rounded"
+                    android:layout_marginTop="10dp"
+
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textSize="17dp"
+                    android:hint="Segundo Apellido"/>
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/txtcorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="5dp"
+                android:background="@drawable/edittext_rounded"
+                android:padding="15dp"
+                android:textSize="15dp"
+                android:ems="10"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp"
+                android:inputType="textEmailAddress"
+
+                android:hint="Correo Electrónico"/>
+
+            <EditText
+                android:id="@+id/txttelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_phone_office_24"
+                android:drawablePadding="5dp"
+                android:background="@drawable/edittext_rounded"
+                android:padding="15dp"
+                android:textSize="15dp"
+                android:ems="10"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp"
+                android:inputType="number"
+                android:hint="Telefono"/>
+
+            <EditText
+                android:id="@+id/txtcelular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_phone_android"
+                android:drawablePadding="5dp"
+                android:background="@drawable/edittext_rounded"
+                android:padding="15dp"
+                android:textSize="15dp"
+                android:ems="10"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Celular"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/fechaNac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_birthday_24"
+                android:drawablePadding="5dp"
+                android:background="@drawable/edittext_rounded"
+                android:padding="15dp"
+                android:textSize="15dp"
+                android:ems="10"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp"
+                android:inputType="date"
+                android:hint="Fecha de Nacimiento (YYYY-MM-AA)"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btnCrearCuenta"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:drawableLeft="@drawable/ic_contact_card_24"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btn"
+                    android:padding="10dp"
+
+                    android:text="Crear Cuenta"
+
+                    android:textAllCaps="false"
+                    android:textColor="@color/blanco" />
+
+                <Button
+                    android:id="@+id/btnRegresar"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_cancel"
+                    android:padding="10dp"
+                    android:background="@drawable/btn"
+
+                    android:textColor="@color/blanco"
+                    android:textAllCaps="false"
+
+                    android:layout_alignParentBottom="true"
+
+
+                    android:text="Principal"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

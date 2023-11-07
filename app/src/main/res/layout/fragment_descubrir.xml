@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Interfaces.Descubrir"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/logo_35"
+            android:tint="#FFF">
+
+        </ImageView>
+
+        <EditText
+            android:id="@+id/txtSearchPub"
+            android:background="@drawable/edittext_rounded"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingStart="18dp"
+            android:textColorHint="#c1c1c1"
+            android:ems="10"
+            android:textColor="@color/negro"
+            android:inputType="textPersonName"
+
+            android:hint="Buscar Publicaciones"
+            android:drawableTint="#c1c1c1"
+            android:drawableEnd="@drawable/ic_search_24"
+            android:paddingEnd="15dp"
+            />
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_descubrir"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo"/>
+
+
+</LinearLayout>

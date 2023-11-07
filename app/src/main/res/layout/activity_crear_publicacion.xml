@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Interfaces.CrearPublicacion"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/logo_35"
+            android:tint="#FFF">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txtSearchFav"
+
+            android:layout_width="wrap_content"
+            android:layout_height="25.0dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.20"
+            android:ems="10"
+
+            android:paddingStart="18dp"
+            android:text="Nueva Publicación"
+            android:textAlignment="center"
+            android:textColor="@color/blanco"
+            android:textColorHint="#c1c1c1"
+            android:textSize="20dp" />
+
+
+        <ImageView
+            android:id="@+id/closePub"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/close_window"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imagenPub"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center"
+        android:src="@drawable/noimagen"
+        android:background="#E6E6E6"/>
+
+    <Button
+        android:id="@+id/btnElegir"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_pictures_folder_24"
+        android:paddingHorizontal="60dp"
+        android:textAllCaps="false"
+        android:background="@drawable/btn"
+        android:textColor="@color/blanco"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="Elegir imagen" />
+
+
+    <EditText
+        android:id="@+id/txttituloP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_view_details"
+        android:drawablePadding="5dp"
+        android:background="@drawable/edittext_rounded"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:ems="10"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+
+        android:inputType="textPersonName"
+        android:hint="Titulo" />
+
+    <EditText
+        android:id="@+id/txtdescP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/edittext_rounded"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:drawableLeft="@drawable/ic_create_new_24"
+        android:drawablePadding="5dp"
+
+        android:ems="10"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:hint="Descripción"/>
+
+    <EditText
+        android:id="@+id/txtcelP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_phone_office_24"
+        android:drawablePadding="5dp"
+        android:background="@drawable/edittext_rounded"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:ems="10"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+
+
+        android:inputType="phone"
+        android:hint="Teléfono / Celular"/>
+
+    <EditText
+        android:id="@+id/txtdireccionP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_map_24"
+        android:drawablePadding="5dp"
+        android:background="@drawable/edittext_rounded"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:ems="10"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+
+        android:inputType="textPersonName"
+        android:hint="Dirección" />
+
+    <EditText
+        android:id="@+id/txtcorreoP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_mail_24"
+        android:drawablePadding="5dp"
+        android:background="@drawable/edittext_rounded"
+        android:padding="10dp"
+
+        android:textSize="15dp"
+        android:ems="10"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+
+        android:inputType="textEmailAddress"
+        android:hint="Correo Electrónico"/>
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_send_to_printer_24"
+        android:paddingHorizontal="60dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/btn"
+        android:textColor="@color/blanco"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"
+        android:text="Publicar" />
+
+
+</LinearLayout>
